@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #5372f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Dosis', sans-serif;
+}
+
+.container {
+    background-color: #fff;
+    width: 470px;
+    border-radius: 6px;
+}
+
+.container h2 {
+    font-size: 25px;
+    font-weight: 500;
+    border-bottom: 1px solid #ccc;
+    padding: 18px 25px;
+}
+
+.container .content {
+    margin: 20px 25px 35px;
+}
+
+.content .word {
+    font-size: 33px;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    margin-right: -10px;
+}
+
+.content .details {
+    margin: 25px 0 20px;
+}
+
+.details p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.details p b {
+    font-weight: 600;
+}
+
+.content input {
+    width: 100%;
+    height: 60px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 0 16px;
+    border: 1px solid #aaa;
+}
+
+.content .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.buttons button {
+    width: calc(100% / 2 - 8px);
+    border: none;
+    outline: none;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 15px 0;
+    cursor: pointer;
+}
+.buttons .refresh-word{
+    background-color: #6c757d;
+}
+.buttons .check-word{
+    background-color: #5372f0;
+}
+
+
+@media screen and (width <= 500px){
+    body{
+        background-color: rgb(4, 104, 70);
+    }
+    .container {
+        background-color: #fff;
+        width: 370px;
+        border-radius: 6px;
+    }
+}
